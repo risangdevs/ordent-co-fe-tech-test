@@ -45,9 +45,11 @@
 
   border-radius: 8px;
 }
-.card-title {
+.card-title-css {
+  display: block;
+  white-space: normal;
   width: 383px;
-  height: 62px;
+  max-height: 62px;
   text-align: center;
   margin: auto;
 
@@ -59,11 +61,13 @@
 
   color: #000000;
 }
-.card-text {
+.card-text-css {
+  display: block;
+  white-space: normal;
   width: 383px;
   height: 64px;
 
-  margin: auto;
+  margin: 10px auto;
 
   font-family: DM Sans;
   font-style: normal;
@@ -72,5 +76,9 @@
   line-height: 16px;
 
   color: #000000;
+}
+.icons-css{
+  margin-left: 5px;
+  position: relative;
 }
 

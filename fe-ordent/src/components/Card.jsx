@@ -1,5 +1,9 @@
 import { Button, Card } from "react-bootstrap";
 import "../App.css";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+
 export const CardComponent = ({ data }) => {
   const isPrime = (num) => {
     for (let i = 2; i < num; i++) {
@@ -26,17 +30,37 @@ export const CardComponent = ({ data }) => {
               <Card.Img className="card-img" src={e.cover} />
               <Card.Body>
                 <Card.Title className="card-title">{e.title}</Card.Title>
-                <Card.Text className="card-text">{e.summary}</Card.Text>
-                <Card.Text
+                <Card.Text className="card-text-css">{e.summary}</Card.Text>
+                <div
                   style={{
-                    color: "#0d81ed",
-                    fontWeight: "bold",
-                    fontFamily: "DM Sans",
-                    marginLeft: "0",
+                    display: "inline-flex",
+                    flexWrap: "wrap",
+                    width: "90%",
+                    height: "16px",
                   }}
                 >
-                  Sponsored Ads
-                </Card.Text>
+                  <div style={{ width: "50%" }}>
+                    <p
+                      style={{
+                        color: "#0d81ed",
+                      }}
+                    >
+                      Sponsored Ads
+                    </p>
+                  </div>
+                  <div
+                    style={{
+                      margin: "auto",
+                      width: "50%",
+                      justifyContent: "space-evenly",
+                      height: "16px",
+                    }}
+                  >
+                    <FavoriteBorderOutlinedIcon className="icons-css" />
+                    <LocalOfferOutlinedIcon className="icons-css" />
+                    <ShareOutlinedIcon className="icons-css" />
+                  </div>
+                </div>
               </Card.Body>
             </Card>
           );
@@ -56,7 +80,35 @@ export const CardComponent = ({ data }) => {
               <Card.Img className="card-img" src={e.cover} />
               <Card.Body>
                 <Card.Title className="card-title">{e.title}</Card.Title>
-                <Card.Text className="card-text">{e.summary}</Card.Text>
+                <Card.Text className="card-text-css">{e.summary}</Card.Text>
+                <div
+                  style={{
+                    display: "inline-flex",
+                    flexWrap: "wrap",
+                    width: "90%",
+                    height: "16px",
+                  }}
+                >
+                  <div style={{ width: "50%" }}>
+                    <p
+                      style={{
+                        color: "#0d81ed",
+                      }}
+                    ></p>
+                  </div>
+                  <div
+                    style={{
+                      margin: "auto",
+                      width: "50%",
+                      justifyContent: "space-evenly",
+                      height: "16px",
+                    }}
+                  >
+                    <FavoriteBorderOutlinedIcon className="icons-css" />
+                    <LocalOfferOutlinedIcon className="icons-css" />
+                    <ShareOutlinedIcon className="icons-css" />
+                  </div>
+                </div>
               </Card.Body>
             </Card>
           );
