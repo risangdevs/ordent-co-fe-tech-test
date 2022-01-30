@@ -6,3 +6,8 @@ run server:
 ```cd fe-ordent```
 
 ```json-server --watch db.json```
+
+run client:
+```cd fe-ordent```
+
+```npm start```
